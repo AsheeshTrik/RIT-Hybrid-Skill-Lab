@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function f1() {
+            var n = document.getElementById("in").value;
+            var fact = 1;
+            for (var i = 1; i <= n; i++) {
+                fact = fact * i;
+            }
+            window.alert("The factorial of " + n + " is " + fact);
+        }
+    </script>
+    <input id="in" placeholder="Enter a number">
+    <button type="button" onclick="f1()">Factorial</button>
+</body>
+
+</html>

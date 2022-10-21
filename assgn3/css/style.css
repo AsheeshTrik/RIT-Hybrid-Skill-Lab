@@ -1,0 +1,34 @@
+.h {
+    color: rgb(25, 18, 149);
+}
+
+.q {
+    font-weight: bolder;
+    color: rgba(12, 9, 93, 0.796);
+}
+
+.labels {
+    font-weight: bold;
+    color: rgba(32, 20, 119, 0.545);
+}
+
+.reset {
+    background-color: white;
+    color: blue;
+    border: none;
+    border-radius: 3px;
+    border-color: blue;
+    border-style: solid;
+    border-width: 2px;
+    height: 35px;
+    width: 70px;
+}
+
+.submit {
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    height: 35px;
+    width: 70px;
+}

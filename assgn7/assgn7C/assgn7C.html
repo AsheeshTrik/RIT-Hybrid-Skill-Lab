@@ -1,0 +1,26 @@
+<head></head>
+
+<body>
+    <script>
+        function divi() {
+            var n = parseInt(document.getElementById("in").value);
+            var str = n + " is divisible by the following:";
+
+            for (var i = 3; i <= 9; i++) {
+                var rem = n % i;
+                switch (rem) {
+                    case 0:
+                        str = str.concat(" ", i);
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            document.writeln(str);
+        }
+    </script>
+    <input id="in">
+    <button type="button" onclick="divi()">Check divisibility</button>
+
+</body>

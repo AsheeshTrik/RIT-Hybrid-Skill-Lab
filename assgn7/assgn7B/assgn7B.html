@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Bio data form</title>
+	<meta name="description" content="Bio Data Page.">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Asheesh Trikannad">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<center>
+		<h1>Bio Data</h1>
+		<div class="container" id="inputForm">
+			<div>
+				<h2 class="heading">Basic Information</h2>
+				<label>First Name</label>
+				<input type="text" id="firstName">
+				<label>Last Name</label>
+				<input type="text" id="lastName">
+				<label>Date of Birth</label>
+				<input type="date" id="dateOfBirth">
+			</div>
+
+			<br>
+
+			<div>
+				<h2 class="heading">Contact Information</h2>
+				<label>Email ID</label>
+				<input type="text" id="eMail">
+				<label>Phone number</label>
+				<input type="text" id="phoneNo">
+				<label>Address Line 1</label>
+				<input type="text" id="addrLine1">
+				<label>Address Line 2</label>
+				<input type="text" id="addrLine2">
+				<label>City</label>
+				<input type="text" id="city">
+				<label>State</label>
+				<input type="text" id="state">
+				<label>Pin Code</label>
+				<input type="text" id="pincode">
+				<label>Country</label>
+				<input type="text" id="country">
+				<label>LinkedIn</label>
+				<input type="text" id="linkedIn">
+			</div>
+
+			<br>
+
+			<div>
+				<h2 class="heading">Education Information</h2>
+				<label>University Name</label>
+				<input type="text" id="univ">
+				<label>Degree</label>
+				<input type="text" id="degree">
+				<label>Class XII School Name</label>
+				<input type="text" id="xiiSchool">
+				<label>Class XII Overall Marks</label>
+				<input type="number" id="xiiMarks">
+				<label>Class XII Graduation Year</label>
+				<input type="number" id="xiiYear">
+				<label>Class X School Name</label>
+				<input type="text" id="xSchool">
+				<label>Class X Overall Marks</label>
+				<input type="number" id="xMarks">
+				<label>Class X Graduation Year</label>
+				<input type="number" id="xYear">
+			</div>
+
+			<br>
+
+			<div>
+				<h2 class="heading">Occupation Information</h2>
+				<label>Current role</label>
+				<input type="text" id="currentRole">
+				<label>Start year</label>
+				<input type="date" id="currentStart">
+				<label>Past role 1</label>
+				<input type="text" id="pastRole1">
+				<label>Start year</label>
+				<input type="date" id="past1Start">
+				<label>End year</label>
+				<input type="date" id="past1End">
+				<label>Past role 2</label>
+				<input type="text" id="pastRole2">
+				<label>Start year</label>
+				<input type="date" id="past2Start">
+				<label>End year</label>
+				<input type="date" id="past2End">
+			</div>
+
+			<br>
+			<h2 class="heading">Skills & Achievements</h2>
+
+			<label>Key skill 1</label>
+			<input type="text" id="keySkill1">
+			<label>Key skill 2</label>
+			<input type="text" id="keySkill2">
+			<label>Key skill 3</label>
+			<input type="text" id="keySkill3">
+			<label>Key skill 4</label>
+			<input type="text" id="keySkill4">
+			<label>Achievement 1</label>
+			<input type="text" id="achi1">
+			<label>Achievement 2</label>
+			<input type="text" id="achi2">
+			<label>Achievement 3</label>
+			<input type="text" id="achi3">
+			<label>Achievement 4</label>
+			<input type="text" id="achi4">
+
+			<input type="button" name="button" id="btn" value="Submit" onclick="ProcessForm()">
+
+			<script src="js/script.js"></script>
+		</div>
+		<div id="outputForm" style="display: none;">
+			<span id="spanResult"></span>
+			<div class="infoBlock1">
+				<h2 class="heading2">Basic Information</h2>
+				<p id="name-out">Name: </p>
+				<p id="dob-out">Date of Birth: </p>
+
+				<br>
+
+				<h2 class="heading2">Contact Information</h2>
+				<p id="email-out">Email: </p>
+				<p id="phone-out">Phone: </p>
+				<p id="address-out">Address: </p>
+				<p id="linkedin-out">LinkedIn: </p>
+
+				<br>
+
+				<h2 class="heading2">Education Information</h2>
+				<h4>Current Education</h4>
+				<p id="univ-out">University: </p>
+				<p id="degree-out">Degree: </p>
+				<h4>Class XII</h4>
+				<p id="xiiSchool-out">School: </p>
+				<p id="xiiMarks-out">Marks: </p>
+				<p id="xiiYear-out">Graduation Year: </p>
+				<h4>Class X</h4>
+				<p id="xSchool-out">School: </p>
+				<p id="xMarks-out">Marks: </p>
+				<p id="xYear-out">Graduation Year: </p>
+
+				<br>
+
+				<h2 class="heading2">Occupation Information</h2>
+				<h4>Current</h4>
+				<p id="curr-role-out">Role: </p>
+				<p id="curr-start-out">Start Year: </p>
+				<h4>Previous (1)</h4>
+				<p id="past1-role-out">Role: </p>
+				<p id="past1-start-out">Start Year: </p>
+				<p id="past1-end-out">End Year: </p>
+				<h4>Previous (2)</h4>
+				<p id="past2-role-out">Role: </p>
+				<p id="past2-start-out">Start Year: </p>
+				<p id="past2-end-out">End Year: </p>
+
+				<br>
+
+				<h2 class="heading2">Skills & Achievements</h2>
+				<h4>Skills</h4>
+				<p id="skill1-out"></p>
+				<p id="skill2-out"></p>
+				<p id="skill3-out"></p>
+				<p id="skill4-out"></p>
+				<h4>Achievements</h4>
+				<p id="achivement1-out"></p>
+				<p id="achivement2-out"></p>
+				<p id="achivement3-out"></p>
+				<p id="achivement4-out"></p>
+			</div>
+			<br>
+		</div>
+		<input type="button" name="button" id="btnForm" value="New Form" onclick="LoadForm()">
+	</center>
+</body>
+
+</html>

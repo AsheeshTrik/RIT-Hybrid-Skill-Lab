@@ -1,0 +1,50 @@
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form method="get">
+        <h1 class="h">Feedback Form</h1>
+
+        <label class="labels">Feedback Code:</label><input><br>
+        <label class="labels">Semester:</label><input type="number"> <label class="labels">Section:<input></label>
+
+        <br><br><label class="labels">Teacher:</label>
+        <select>
+            <option value="teacher1">Dr. Rajiv Barman</option>
+            <option value="teacher2">Dr. Sushila Korpal</option>
+            <option value="teacher3">Dr. Sonam Srivastava</option>
+            <option value="teacher4">Dr. Darshan Goswami</option>
+        </select>
+
+        <br><br>
+        <div class="q">1. How is the explanation of the topics?</div>
+        <br><input type="radio" name="q1" value="1">Very Poor
+        <input type="radio" name="q1" value="2">Poor
+        <input type="radio" name="q1" value="3">Satisfactory
+        <input type="radio" name="q1" value="4">Good
+        <input type="radio" name="q1" value="5">Very Good
+
+        <br><br>
+        <div class="q">2. How is the pacing of teaching?</div>
+        <br><input type="radio" name="q2" value="1">Slow
+        <input type="radio" name="q2" value="2"> Good
+        <input type="radio" name="q2" value="3"> Fast
+
+        <br><br>
+        <div class="q">3. How is the knowledge of the subject?</div>
+        <br><input type="radio" name="q3" value="1">Very Poor
+        <input type="radio" name="q3" value="2">Poor
+        <input type="radio" name="q3" value="3">Satisfactory
+        <input type="radio" name="q3" value="4">Good
+        <input type="radio" name="q3" value="5">Very Good
+
+        <br><br>
+        <div class="q">4.Additional Feedback</div>
+        <br><input type="text">
+
+        <br><br><input type="reset" value="Reset" href="#" class="reset"> <input type="submit" value="Submit"
+            formaction="result.html" class="submit">
+    </form>
+</body>

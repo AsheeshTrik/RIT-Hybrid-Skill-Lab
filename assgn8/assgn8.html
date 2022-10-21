@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Asheesh's Checkout Page</title>
+	<meta name="description" content="Interactive checkout page.">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="author" content="Asheesh Trikannad">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<center>
+
+		<h1>Welcome to checkout!</h1>
+
+		<div class="container">
+			<label for="itemPurchased">Item Purchased</label>
+			<input type="text" name="itemPurchased" id="itemPurchased">
+			<label for="qty">Quantity</label>
+			<input type="number" name="qty" id="qty" min="1">
+			<label for="itemCode">Item Code</label>
+			<input type="text" name="itemCode" id="itemCode">
+			<label for="itemPrice">Price</label>
+			<input type="number" name="itemPrice" id="itemPrice">
+			
+			<input type="button" name="button" id="btnAdd" value="Add" onclick="AddRow()">
+
+
+		</div>
+
+		<br>
+		<br>
+
+		<table id="show">
+
+			<tr>
+				<th>Item Purchased</th>
+				<th>Quantity</th>
+				<th>Item Code</th>
+				<th>Price</th>
+			</tr>
+
+		</table>
+		<br>
+		<br>
+		<br>
+
+		<body>
+			<div id="total" class="total">
+				<input type="button" name="button" id="btnCalculate" value="Calculate" onclick="ShowTotal()">
+			</div>
+		</body>
+
+		<script src="js/script.js"></script>
+	</center>
+</body>
+
+</html>

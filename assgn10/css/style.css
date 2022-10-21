@@ -1,0 +1,29 @@
+button {
+    height: 40px;
+    width: 80px;
+}
+
+.factorial {
+    background-color: blue;
+    color: white;
+}
+
+.prime {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+.fibonacci {
+    background-color: greenyellow;
+    color: black;
+}
+
+.natural {
+    background-color: orange;
+    color: black;
+}
+
+.container {
+    background-color: darkorchid;
+    padding: 15px;
+}

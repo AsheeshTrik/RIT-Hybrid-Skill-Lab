@@ -1,0 +1,26 @@
+.cv {
+    font-size: 28px;
+    font-family: arial;
+    color: rgb(91, 63, 3);
+}
+
+.details {
+    font-size: 14px;
+    font-family: arial;
+    color: rgb(186, 166, 121);
+}
+
+.main {
+    font-size: 20px;
+    font-family: arial;
+    color: rgb(131, 115, 11);
+}
+
+.content {
+    background-color: rgb(241, 239, 232);
+    font-family: arial;
+    font-size: 16px;
+    color: rgb(97, 69, 8);
+    padding: 15px;
+    width: 900px;
+}

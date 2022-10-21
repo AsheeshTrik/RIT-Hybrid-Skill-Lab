@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Bookstore</title>
+	<meta name="description" content="Interactive bookstore.">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Asheesh Trikannad">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<script type="js/script.js"></script>
+	<center>
+		<div class="row">
+			<div class="column left">
+				<ul>
+					<li><a href="assgn6-user.html">User</a></li>
+					<li><a href="assgn6-admin.html" class="active">Admin</a></li>
+					<li><a href="assgn6-bill.html">Bill</a></li>
+				</ul>
+			</div>
+			<div class="column middle">
+				<h1 style="background-color: black; color: gold;">Welcome to the bookstore!</h1>
+				<button disabled>Add/Delete</button>
+				<a href="assgn6-user.html"><button>Logout</button></a>
+
+				<script>
+					function Logout() {
+						console.log('HERE!');
+						document.getElementById('admintable').style.display = 'none';
+						document.getElementById('loginscreen').style.display = 'block';
+					}
+				</script>
+
+				<div class="tablestyle" id="admintable">
+					<table>
+
+						<tr>
+							<td>Harry Potter and the Goblet of Fire</td>
+							<td>J.K. Rowling</td>
+							<td>Fantasy</td>
+							<td>
+								<p style="color: navy;">Buy: Rs. 400</p>
+								<p style="color: navy;">Rent: Rs. 120</p>
+							</td>
+							<td>
+								<p style="color: forestgreen;">Buy: 85</p>
+								<p style="color: forestgreen;">Rent: 7</p>
+							</td>
+						</tr>
+						<tr>
+							<td>Harry Potter and the Order of the Phoenix</td>
+							<td>J.K. Rowling</td>
+							<td>Fantasy</td>
+							<td>
+								<p style="color: navy;">Buy: Rs. 450</p>
+								<p style="color: navy;">Rent: Rs. 200</p>
+							</td>
+							<td>
+								<p style="color: forestgreen;">Buy: 94</p>
+								<p style="color: forestgreen;">Rent: 10</p>
+							</td>
+						</tr>
+						<tr>
+							<td>Harry Potter and the Half-Blood Prince</td>
+							<td>J.K. Rowling</td>
+							<td>Fantasy</td>
+							<td>
+								<p style="color: navy;">Buy: Rs. 450</p>
+								<p style="color: navy;">Rent: Rs. 200</p>
+							</td>
+							<td>
+								<p style="color: forestgreen;">Buy: 65</p>
+								<p style="color: forestgreen;">Rent: 3</p>
+							</td>
+						</tr>
+						<tr>
+							<td>Harry Potter and the Deathly Hallows</td>
+							<td>J.K. Rowling</td>
+							<td>Fantasy</td>
+							<td>
+								<p style="color: navy;">Buy: Rs. 500</p>
+								<p style="color: navy;">Rent: Rs. 200</p>
+							</td>
+							<td>
+								<p style="color: forestgreen;">Buy: 38</p>
+								<p style="color: orangered;">Rent: 0</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="container" id="loginscreen" style="display: none;">
+					<h2 style="color: black;">Welcome, Admin! Please log in...</h2>
+					<br>
+					<label>Username</label>
+					<input type="text" id="username" disabled>
+					<label>Password</label>
+					<input type="text" id="password" disabled>
+					<input type="button" value="Forgot Password?" disabled>
+				</div>
+			</div>
+			<div class="column right">
+				<h2><u>Current Offers!!!</u></h2>
+				<p style="color: blue; background-color: lightcyan;">
+					Exisiting members get 25% off all purchases!
+				</p>
+				<p style="color: orangered; background-color: lightcyan;">
+					New members get 50% off during the first month of signing up!
+				</p>
+				<p style="color: purple; background-color: lightcyan;">
+					30% off all Harry Potter rentals when you come into the store!
+				</p>
+
+				<br>
+				<h2><u>Instructions</u></h2>
+				<h4 style="color: royalblue; background-color: yellow;">Our website is still under construction. If you
+					are interested in buying or renting a book, please call or visit the store.</h4>
+
+				<br>
+				<h2><u>Let's connect!</u></h2>
+				<p>Phone Number: (123)456-7890</p>
+				<p>Address: 123 Brigade Rd, Bangalore, KA 560001</p>
+
+				<br>
+				<h2><u>Timings</u></h2>
+				<p>Monday - Friday 9:00am - 6:00pm</p>
+			</div>
+		</div>
+	</center>
+	<center>
+		<a class="pag" href="assgn6-admin.html">&laquo;</a>
+		<a class="pag" href="assgn6-admin.html">1</a>
+		<a href="adminpage2.html" class="pagactive">2</a>
+		<a class="pag" href="adminpage2.html">&raquo;</a>
+	</center>
+</body>
+
+</html>
